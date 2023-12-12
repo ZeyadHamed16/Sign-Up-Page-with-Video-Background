@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign-up</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Sign-up for our webpage" />
+  <link rel="stylesheet" href="CSS/index_style.css" />
+  <!-- icons on the site -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="signUp-form">
+
+    <div class="signUp-left">
+      <video autoplay loop muted>
+        <source src="Media/Video/signUp-page.mp4" />
+      </video>
+      <div class="header-and-logos">
+        <h1>Creativa</h1>
+        <div class="logos">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------- -->
+
+    <div class="signUp-right">
+      <h2>Register</h2>
+      <form autocomplete="off">
+        <div class="details">
+          <label for="name"><i class="fa-solid fa-user"></i></label>
+          <input type="text" id="name" placeholder="Username" minlength="2" maxlength="35"
+            title="Write your username my friend" required />
+        </div>
+
+        <div class="details">
+          <label for="mail"><i class="fa-solid fa-envelope"></i></label>
+          <input type="email" id="mail" placeholder="Email" title="Don't forget the email" required />
+        </div>
+
+        <div class="details">
+          <label for="pass"><i class="fa-solid fa-lock"></i></label>
+          <input type="password" id="pass" placeholder="Password" minlength="5" maxlength="25"
+            title="Password is the important one" required />
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="check" required />
+          <label for="check" title="You didn't read the Terms of Service, did you?">I agree all the statements
+            in</label>
+          <a href="#">TERMS OF SERVICE</a>
+        </div>
+
+        <div class="button-submit">
+          <input type="submit" value="sign up" />
+        </div>
+      </form>
+      <div class="login">
+        Already have an account?
+        <a href="#" target="_blank">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">creativa &#169; 2022 | by zeyad hamed</div>
+</body>
+
+</html>

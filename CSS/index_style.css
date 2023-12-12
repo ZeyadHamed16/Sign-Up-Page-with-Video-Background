@@ -1,0 +1,254 @@
+body {
+	padding: 0 20%;
+	margin: 0;
+	cursor: context-menu;
+	background-image: linear-gradient(-45deg, #c6d8df, #5f98ae, #227094, #05374f);
+	background-size: 400% 400%;
+	animation: body-background 11s ease infinite;
+}
+
+@keyframes body-background {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* ---------------------------------------------------------- */
+/* left & right */
+
+.signUp-left,
+.signUp-right {
+	float: left;
+	width: 40%;
+	height: 650px;
+	padding: 5%;
+	overflow: hidden;
+	margin: 4% 0;
+}
+
+/* ---------------------------------------------------------- */
+/* left */
+
+.signUp-left {
+	position: relative;
+	background-color: black;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+/* video */
+.signUp-left video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	height: 100%;
+}
+
+/* text and logos */
+.header-and-logos {
+	position: absolute;
+	top: 0%;
+	left: 13%;
+	width: 75%;
+	font-weight: bolder;
+	text-align: center;
+}
+
+/* text on video */
+.signUp-left h1 {
+	font-size: 85px;
+	margin-bottom: 5px;
+	border-bottom: 3px solid black;
+	border-radius: 2px;
+}
+
+/* logos */
+.signUp-left .logos a i {
+	display: inline-block;
+	font-size: 60px;
+	color: black;
+	margin: 20px;
+	padding: 0 4px;
+	border: 0.1px double black;
+	border-radius: 10px;
+	transition: all 1s;
+}
+
+.signUp-left .logos i:hover {
+	border: 5px double black;
+	border-radius: 15px;
+	animation: move-logo 0.5s ease-in;
+}
+
+@keyframes move-logo {
+	0% {
+		transform: rotatez(0deg);
+
+	}
+
+	25% {
+		transform: rotatez(20deg);
+
+	}
+
+	75% {
+
+		transform: rotatez(-20deg);
+	}
+
+	100% {
+		transform: rotatez(0deg);
+
+	}
+
+}
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+
+/* right */
+.signUp-right {
+	background-color: white;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+/* header */
+.signUp-right h2 {
+	position: relative;
+	font-size: 35px;
+	text-transform: uppercase;
+	margin: 0 0 20% 0;
+	padding: 15px;
+}
+
+.signUp-right h2::before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	border-bottom: 8px solid black;
+	border-radius: 5px;
+	width: 100%;
+	animation-name: move-border-signUp-left;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes move-border-signUp-left {
+
+	from {
+		width: 0px;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+/* details */
+.signUp-right div {
+	margin: 10%;
+	font-size: 20px;
+}
+
+.signUp-right div[class="details"] label i {
+	margin-right: 10px;
+	font-size: 25px;
+	transition: 1s ease-in;
+}
+
+.signUp-right div[class="details"]:hover label i {
+	color: red;
+	transform: rotateY(360deg);
+}
+
+.signUp-right div[class="details"] input {
+	width: 80%;
+	border: none;
+	border-bottom: 1px solid black;
+	height: 40px;
+	font-size: 20px;
+}
+
+.signUp-right div[class="details"] input:hover {
+	border-color: red;
+}
+
+/* checkbox */
+.signUp-right .checkbox input,
+.signUp-right .checkbox label {
+	margin-top: 15%;
+	cursor: pointer;
+}
+
+.signUp-right .checkbox a {
+	text-decoration: none;
+}
+
+.signUp-right .checkbox a:hover {
+	text-decoration: underline;
+}
+
+/* button */
+.signUp-right .button-submit {
+	margin-top: 20%;
+	text-align: center;
+}
+
+.signUp-right .button-submit input {
+	text-transform: capitalize;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	color: black;
+	background-color: #e8e4e4;
+	opacity: 0.5;
+	border: 5px solid black;
+	border-radius: 20px;
+	width: 100%;
+	padding: 5%;
+	transition: 1s ease-out;
+}
+
+.signUp-right .button-submit input:hover {
+	color: #e8e4e4;
+	background-color: #227094;
+	border-color: #e8e4e4;
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+/* login */
+.signUp-right .login {
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.signUp-right .login a {
+	text-decoration: none;
+}
+
+.signUp-right .login a:hover {
+	text-decoration: underline;
+}
+
+/* ---------------------------------------------- */
+/* copyright */
+
+.copyright {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
